@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box"></div>
+  <!-- 引入文件 -->
+  <script src="./node_modules/react/umd/react.development.js"></script>
+  <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+
+  <script>
+    // 创建元素
+    const tit = React.createElement('h1', null, 'Hello React!')
+
+    // 渲染元素
+    ReactDOM.render(tit, document.getElementById('box'))
+
+  </script>
+</body>
+</html>
